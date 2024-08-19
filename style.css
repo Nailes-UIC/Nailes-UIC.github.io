@@ -90,7 +90,6 @@ nav {
     align-items: center;
     padding: 2rem 9%;
     z-index: 1000;
-    
 }
 
 nav ul {
@@ -446,3 +445,5 @@ section {
 .text-box p{
     font-size: 16px;
 }
+
+/*--------------------------------------------Activity---------------------------------------*/
