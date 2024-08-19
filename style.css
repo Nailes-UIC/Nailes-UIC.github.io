@@ -408,5 +408,43 @@ section {
 
 .skill-placement h1 span{
     color: #FFAD85;
-    text-shadow: 4px 4px #7D272C; 
+    text-shadow: 4px 4px #7D272C;
+}
+
+/*---------------------------------------------Skill effect---------------------------------------*/
+
+.main-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper{
+    margin: 150px auto;
+    width: 70%;
+}
+
+.project{
+    max-width: 250px;
+    float: left;
+    max-height: 250px;
+    margin-right: 10px;
+    margin-top: -1.8rem;
+    margin-top: 5px;
+}
+
+.text-box{
+    color: #fff;
+}
+
+.text-box h2{
+    font-size: 30px;
+    background: linear-gradient(to right, #f32170, #ff6b08,#cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.text-box p{
+    font-size: 16px;
 }
