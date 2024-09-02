@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+/*---------------------------------------------Landing Page---------------------------------------*/
+html {
+    font-size: 62.5%;
+    overflow-y: scroll; 
+    overflow: hidden;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    color: white;
+    cursor: url(/assets/cr1.png), default;
+    background-size: cover;
+    display: flex;
+    background:linear-gradient(225deg, #3f2736 0%, #2d485c 100%);
+    animation: transitionIn 0.75s;
+}
+@keyframes transitionIn {
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+/*----------------------------------------------------------------Navigation Bar----------------------------------------------------------------*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    position: absolute;
+    top: 2rem;
+    left: 8rem;
+    width: 108px;
+    height: auto;
+    border-radius: 60%; 
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.logo:hover {
+    transform: scale(1.1);  
+    filter: drop-shadow(0 0 20px #ee976b);
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9%;
+    z-index: 1000;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 11rem;
+    list-style: none;
+}
+nav ul a {
+    color: #E4C59E;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 19px;
+    text-decoration: none;
+    position: relative;  
+    transition: all 0.3s ease;
+}
+nav a:hover {
+    color: #ee976b; 
+    cursor: url(/assets/cr2.png), pointer;
+}
+
+nav ul a::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #E4C59E;
+    transform: scaleX(0);
+    transform-origin: center;  
+    transition: transform 0.6s ease;
+}
+nav ul a:hover::before {
+    transform: scaleX(1);  
+}
+/*---------------------------------------------------------------------------Home Page---------------------------------------------------------*/
+section {
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    
+}
+.home-img {
+    border-radius: 50%;
+    margin-left: 30px;
+    text-align: right;
+    padding: 4rem;
+}
+.blog {
+    font-size: 2rem;
+    color: #FFAD85;
+}
+.blog:hover {
+    cursor: url(/assets/cr2.png), pointer;
+}
+/*-------------------------------------------------------------------------Profile----------------------------------------------------*/
+.profile-img {
+    position: relative;
+    width: 28vw;
+    border-radius: 50%;
+    box-shadow: 0 0.25px solid #dcb5ff;
+    cursor: pointer;
+    transition: 0.2s linear;
+    padding: 1.8rem;
+    border-radius: 60%; 
+    transition: transform 0.4s ease;
+}
+.profile-img:hover {
+    transform: scale(1.1); 
+    cursor: url(/assets/cr2.png), pointer;
+}
+/*-------------------------------------------------------------Home content--------------------------------------------------------------*/
+.home-content h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.home-content h1 span{
+    color: #FFAD85;
+    text-shadow: 4px 4px #7D272C; 
+}
+.home-content h3 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+.home-content p {
+    font-size: 1.6rem;  
+}
+/*-------------------------------------------------------------------Icons---------------------------------------------------------------*/
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #b74b4b;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #b74b4b;
+}
+.social-icons a:hover {
+    color: #1D2A40;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #b74b4b;
+    box-shadow: 0  0 25px #b74b4b;
+    cursor: url(/assets/cr2.png), pointer;
+}
+/*-------------------------------------------------------------TypingText------------------------------------------------------------------------*/
+.typing-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+.typing-text span{
+    position: relative;
+}
+.typing-text span::before{
+    content: "";
+    color: #E4C59E;
+    animation: words 20s infinite;
+}
+.typing-text span::after{
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+@keyframes cursor{
+    to{
+        border-left: 3px solid #E4C59E;
+    }
+}
+@keyframes words{
+    0%, 20%{
+        content: "Web Developer";
+    }
+    21%, 40%{
+        content: "Gamer";
+    }
+    41%, 60%{
+        content: "IT student";
+    }
+    61%, 80%{
+        content: "Sophomore";
+    }
+    81%, 100%{
+        content: "Ignacian Marian";
+    }
+}
+/*-------------------------------------------------------------About Page------------------------------------------------------------------------*/
+.cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    gap: 8rem;
+}
+/*-------------------------------------------------------------Flex Box------------------------------------------------------------------------*/
+.cont-one{
+    background: rgba( 255, 255, 255, 0.1 );
+    padding: 1.8rem;
+    max-width: 600px;
+    flex-basis: 50%;
+    text-align: justify;
+    color: white;
+    backdrop-filter: blur( 1.5px );
+    border-radius: 3rem;
+    -webkit-backdrop-filter: blur(18px);
+    box-shadow: 0 8px 32px 0 rgba(212, 213, 226, 0.37);
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+/*-------------------------------------------------------------Text------------------------------------------------------------------------*/
+.headline-one, .headline-two, .headline-three{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: rgb(220, 230, 230);
+}
+.m-text {
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+.text-a{
+    color: #FFAD85;
+}
+.spotify{
+    width: 100%;
+    height: 10rem;
+    padding: 1rem;
+}
+/*-------------------------------------------------------------Skill Page------------------------------------------------------------------------*/
+.container {
+    text-align: center;
+    padding: 30rem;
+    padding-left: 40rem;
+    margin-top: -11em;
+}
+.row {
+    display: grid;
+    grid-gap: 8rem;
+    grid-template-columns: repeat(4, 130px);
+    align-content: center;
+    padding: 4rem;
+}
+.column-skill img {
+    width: 74px;
+    height: 74px;
+}
+#listS {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    color: #E4C59E;
+    font-weight: 300;
+}
+#skill-1{
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+#skill-1:hover{
+    transform: scale(1.1);  
+    filter: drop-shadow(0 0 50px #03209e);
+    transform: translate(0, -10px); 
+    cursor: url(/assets/cr2.png), pointer;  
+}
+#skill-2{
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+#skill-2:hover{
+    transform: scale(1.1);  
+    filter: drop-shadow(0 0 50px #e75106);
+    transform: translate(0, 10px); 
+    cursor: url(/assets/cr2.png), pointer;
+}
+#skill-3{
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+#skill-3:hover{
+    transform: scale(1.1);  
+    filter: drop-shadow(0 0 50px #1fc0dd);
+    transform: translate(0, -10px); 
+    cursor: url(/assets/cr2.png), pointer;
+}
+#skill-4{
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+#skill-4:hover{
+    transform: scale(1.1);  
+    filter: drop-shadow(0 0 50px #aee90b);
+    transform: translate(0, 10px); 
+    cursor: url(/assets/cr2.png), pointer;
+}
+#skill-5{
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+#skill-5:hover{
+    transform: scale(1.1);  
+    filter: drop-shadow(0 0 50px #ffa514);
+    transform: translate(0, 10px); 
+    cursor: url(/assets/cr2.png), pointer;
+}
+#skill-6{
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+#skill-6:hover{
+    transform: scale(1.1);  
+    filter: drop-shadow(0 0 50px #d3d7c6);
+    transform: translate(0, 10px); 
+    cursor: url(/assets/cr2.png), pointer;
+}
+#skill-7{
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+#skill-7:hover{
+    transform: scale(1.1);  
+    filter: drop-shadow(0 0 50px #ba0606);
+    transform: translate(0, 10px); 
+    cursor: url(/assets/cr2.png), pointer;
+}
+#skill-8{
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+#skill-8:hover{
+    transform: scale(1.1);  
+    filter: drop-shadow(0 0 50px #28ea7c);
+    transform: translate(0, 10px); 
+    cursor: url(/assets/cr2.png), pointer;
+}
+/*-------------------------------------------------------------Project------------------------------------------------------------------------*/
