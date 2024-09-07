@@ -277,16 +277,17 @@ section {
 /*-------------------------------------------------------------Skill Page------------------------------------------------------------------------*/
 .container {
     text-align: center;
-    padding: 30rem;
-    padding-left: 40rem;
-    margin-top: -11em;
+    padding: 13rem;
+    position: fixed;
+    padding-inline-start: 34.3rem;
+    margin-top: 5rem;
 }
 .row {
     display: grid;
-    grid-gap: 8rem;
+    grid-gap: 10rem;
     grid-template-columns: repeat(4, 130px);
     align-content: center;
-    padding: 4rem;
+    padding: 2.5rem;
 }
 .column-skill img {
     width: 74px;
