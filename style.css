@@ -277,9 +277,9 @@ section {
 /*-------------------------------------------------------------Skill Page------------------------------------------------------------------------*/
 .container {
     text-align: center;
-    padding: 13rem;
+    padding: 15rem;
     position: fixed;
-    padding-inline-start: 34.3rem;
+    padding-inline-start: 35rem;
     margin-top: 5rem;
 }
 .row {
@@ -287,7 +287,6 @@ section {
     grid-gap: 10rem;
     grid-template-columns: repeat(4, 130px);
     align-content: center;
-    padding: 2.5rem;
 }
 .column-skill img {
     width: 74px;
@@ -372,3 +371,21 @@ section {
     cursor: url(/assets/cr2.png), pointer;
 }
 /*-------------------------------------------------------------Project------------------------------------------------------------------------*/
+.container-project{
+    display: flex;
+    align-items: flex-start; 
+    gap: 2.1rem;
+    justify-content: center; 
+    margin: 0 auto;
+    padding: 25rem;
+    box-shadow: #dcb5ff;
+}
+#project-image{
+    max-width: 500px;
+    max-height: auto;
+}
+.project-list {
+    text-align: left;
+    font-size: 18px;
+    color: #dcb5ff;
+}
