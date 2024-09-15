@@ -128,6 +128,7 @@ section {
 .blog {
     font-size: 2rem;
     color: #FFAD85;
+    padding: 0.5rem;
 }
 .blog:hover {
     cursor: url(/assets/cr2.png), pointer;
