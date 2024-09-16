@@ -280,14 +280,15 @@ section {
     text-align: center;
     padding: 15rem;
     position: fixed;
-    padding-inline-start: 35rem;
-    margin-top: 5rem;
+    padding-inline-start: 10rem;
+
 }
 .row {
     display: grid;
     grid-gap: 10rem;
     grid-template-columns: repeat(4, 130px);
-    align-content: center;
+    place-items: center;
+    padding-left: 50rem;
 }
 .column-skill img {
     width: 74px;
@@ -298,6 +299,8 @@ section {
     font-size: 3rem;
     color: #E4C59E;
     font-weight: 300;
+    padding-left: 50rem;
+    margin-top: 10rem;
 }
 #skill-1{
     transition: transform 0.3s ease, filter 0.3s ease;
