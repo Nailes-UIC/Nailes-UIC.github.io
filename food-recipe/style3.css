@@ -25,3 +25,12 @@ p.time {
 h1, h2, p, li{
     font-family: Helvetica;
 }
+.wood {
+    font-size: 2rem;
+    color: #ffa514;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+.wood:hover {
+    cursor: url(/assets/cr2.png), pointer;
+}
