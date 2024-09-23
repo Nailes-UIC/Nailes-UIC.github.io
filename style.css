@@ -133,6 +133,24 @@ section {
 .blog:hover {
     cursor: url(/assets/cr2.png), pointer;
 }
+.food {
+    font-size: 2rem;
+    color: #dcb5ff;
+    padding: 0.5rem;
+}
+.food:hover {
+    cursor: url(/assets/cr2.png), pointer;
+}
+.wood {
+    font-size: 2rem;
+    color: #ffa514;
+    padding: 0.5rem;
+}
+.wood:hover {
+    cursor: url(/assets/cr2.png), pointer;
+}
+
+
 /*-------------------------------------------------------------------------Profile----------------------------------------------------*/
 .profile-img {
     position: relative;
