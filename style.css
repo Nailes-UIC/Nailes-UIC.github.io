@@ -390,3 +390,137 @@ section {
     font-size: 18px;
     color: #dcb5ff;
 }
+
+/*---------------------------------------------Media Query Adjustments------------------------------------------------*/
+@media (max-width: 1200px) {
+    nav ul {
+        gap: 6rem;
+    }
+    .home-content h1 {
+        font-size: 5rem;
+    }
+    .home-content h3 {
+        font-size: 3rem;
+    }
+    .container {
+        padding: 10rem;
+        padding-inline-start: 15rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+        padding: 1rem 5%;
+    }
+
+    nav ul {
+        gap: 3rem;
+    }
+
+    .container {
+        padding: 8rem;
+        padding-inline-start: 5rem;
+    }
+
+    .container-project {
+        flex-direction: column;
+        padding: 10rem;
+        text-align: center;
+    }
+
+    #project-image {
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .cont {
+        flex-direction: column; 
+        padding: 2rem;
+        gap: 2rem; 
+    }
+
+    .cont-one {
+        padding: 1rem; 
+        width: 100%; 
+    }
+
+    .headline-one, .headline-two, .headline-three {
+        font-size: 1.8rem; 
+    }
+
+    .m-text {
+        font-size: 1rem; 
+    }
+
+    .spotify {
+        height: 6rem; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    body {
+        font-size: 50%; 
+    }
+
+    .logo {
+        width: 64px; 
+        left: 2rem;
+    }
+
+    .container-project {
+        padding: 5rem;
+    }
+
+    .project-list {
+        font-size: 1.4rem;
+    }
+
+    .column-skill img {
+        width: 60px;
+        height: 60px;
+    }
+
+    nav ul a {
+        font-size: 1.6rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .home-img {
+        margin-bottom: 2rem; 
+    }
+
+    nav ul {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    nav ul a {
+        margin: 0.5rem 0; 
+    }
+
+    .blog {
+        display: block; 
+        margin: 0.5rem 0; 
+    }
+
+    .profile-img {
+        width: 100px; 
+        height: auto; 
+        border-radius: 50%;
+    }
+
+    .social-icons a {
+        width: 40px; 
+        height: 40px; 
+    }
+}
