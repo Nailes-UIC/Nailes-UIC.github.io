@@ -1,4 +1,4 @@
-
+//dark mode
 const toggleButton = document.getElementById('dark-mode-toggle');
 const body = document.body;
 
@@ -9,7 +9,7 @@ if (localStorage.getItem('dark-mode') === 'enabled') {
 toggleButton.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
 
-    
+
     if (body.classList.contains('dark-mode')) {
         localStorage.setItem('dark-mode', 'enabled');
     } else {
@@ -17,6 +17,7 @@ toggleButton.addEventListener('click', () => {
     }
 });
 
+//hamburger
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('nav ul');
 
