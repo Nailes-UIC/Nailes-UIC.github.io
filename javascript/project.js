@@ -32,3 +32,5 @@ prevBtn.addEventListener('click', () => {
 
 
 updateProjects();
+
+
