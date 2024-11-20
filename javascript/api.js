@@ -7,16 +7,16 @@ const loadMoviesButton = document.getElementById('load-movies-button');
 async function fetchTopMovies() {
     try {
         const year = 2024;
-        const queryParams = `&primary_release_year=${year}&sort_by=popularity.desc`; // Movies sorted by popularity
+        const queryParams = `&primary_release_year=${year}&sort_by=popularity.desc`; 
 
         const response = await fetch(`${API_URL}${queryParams}`);
         const data = await response.json();
 
         if (data.results && data.results.length > 0) {
-            // Take the top 10 movies
+            
             const topMovies = data.results.slice(0, 10);
 
-            // Render movies
+            
             moviesContainer.innerHTML = topMovies.map(movie => `
                 <div class="movie-card">
                     <img src="https://image.tmdb.org/t/p/w300${movie.poster_path}" 
@@ -26,7 +26,7 @@ async function fetchTopMovies() {
                 </div>
             `).join('');
         } else {
-            // No movies found
+          
             moviesContainer.innerHTML = `<p>No movies found for 2024.</p>`;
         }
     } catch (error) {
