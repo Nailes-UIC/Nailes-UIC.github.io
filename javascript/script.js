@@ -1,4 +1,3 @@
-//dark mode
 const toggleButton = document.getElementById('dark-mode-toggle');
 const body = document.body;
 
@@ -17,7 +16,6 @@ toggleButton.addEventListener('click', () => {
     }
 });
 
-//hamburger
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('nav ul');
 

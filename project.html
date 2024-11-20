@@ -3,42 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Projects</title>
+    <link rel="stylesheet" href="/css/project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <link rel="icon" href="/assets/uic-logo2.ico" type="image/x-icon">
 <body>
     <header>
-            <nav>
-               <a href="index.html"><img src="/assets/UIC LOGO.png" alt="university logo" class="logo"></a> 
-                <ul>
-                   <li><a href="index.html">Home</a></li>
-                   <li><a href="about.html">About</a></li> 
-                   <li><a href="skill.html">Skills</a></li> 
-                   <li><a href="project.html">Projects</a></li> 
-                </ul>   
-            </nav>
-            <label class="switch">
-                <input type="checkbox" id="dark-mode-toggle">
-                <span class="slider round"></span>
-              </label>
-              <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+        <nav>
+           <a href="index.html"><img src="/assets/UIC LOGO.png" alt="university logo" class="logo"></a> 
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About</a></li> 
+               <li><a href="skill.html">Skills</a></li> 
+               <li><a href="project.html">Projects</a></li>
+               <li><a href="api.html">Api Demo</a></li> 
+            </ul>   
+        </nav>
+        <label class="switch">
+            <input type="checkbox" id="dark-mode-toggle">
+            <span class="slider round"></span>
+          </label>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
-        <div class="container-project">
-            <img id="project-image"src="/assets/project1.png" alt="">
-                <div class="project-list">
-                   <h1>Java Programming Project</h1>
-                   <p style="text-align: justify;">In our final project for the semester was to create a project based on the given
-                    task, the task was to create a Guidance Student Profiling System.
-                   </p>
+
+    <main>
+        <div class="projects-wrapper">
+            <div class="projects-container">
+                <div class="project active" id="project-1">
+                    <img src="/assets/project1.png" alt="">
+                    <div class="project-list">
+                        <h1>Java Programming Project</h1>
+                        <p>In our final project for the semester, we created a Guidance Student Profiling System based on the given task.</p>
+                    </div>
                 </div>
-           </div>
-           <script src="script.js"></script>
+
+                <div class="project" id="project-2">
+                    <img src="/assets/project2.png" alt="">
+                    <div class="project-list">
+                        <h1>Web Development Project</h1>
+                        <p>Created a Landing page using Figma for our activity.</p>
+                    </div>
+                </div>
+
+                <div class="project" id="project-3">
+                    <img src="/assets/project3.png" alt="">
+                    <div class="project-list">
+                        <h1>Reservify</h1>
+                        <p>A semester long project made by our group, key features are booking equipments and rooms with database.</p>
+                    </div>
+                </div>
+
+                <div class="project" id="project-4">
+                    <img src="/assets/project4.png" alt="">
+                    <div class="project-list">
+                        <h1>Edu-Track</h1>
+                        <p>Proposed application to be made for our object-oriented-programming using java, key features are students and teachers keeping 
+                            track of tasks, grades, and being able to make notes for subjects.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button id="prev-btn" class="arrow-btn prev"><i class="fas fa-chevron-left"></i></button>
+            <button id="next-btn" class="arrow-btn next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </main>
+
+    <script src="/javascript/script.js"></script>
+    <script src="/javascript/project.js"></script>
 </body>
 </html>
